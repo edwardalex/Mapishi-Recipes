@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Sign Up</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Start your project here-->
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Mapishi Jikoni</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="recipes.html">Recipes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="recources.html">Resources</a>
+        </li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Explore</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="funfacts.html">Fun Facts</a>
+            <a class="dropdown-item" href="foodiesconer.html">Foodie’s Corner</a>
+            <a class="dropdown-item" href="image.html">Images</a>
+            <a class="dropdown-item" href="video.html">Video</a>
+          </div>
+        </li>
+      </ul>
+      <!-- Links -->
+
+      <form class="form-inline">
+        <div class="md-form my-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        </div>
+      </form>
+    </div>
+    <!-- Collapsible content -->
+
+  </nav>
+  <!--/.Navbar-->
+
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <!--Mask-->
+        <div class="view">
+          <!--Video source-->
+          <video muted autoplay loop playsinline>
+            <source
+              src="https://player.vimeo.com/external/136078589.mobile.mp4?s=57b1ccad7f3bb9d7723692af6185673658a02589&profile_id=116"
+              type="video/mp4" />
+          </video>
+          <!-- Carousel content -->
+          <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
+            
+            <div class="row">
+              <div class="col-md-10">
+                <ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
+                  <!-- Default form register -->
+                  <form class="text-center" action="#!"><br><br><br><br>
+
+                    <p class="h4 mb-4">Sign up</p>
+
+                    <div class="form-row mb-4">
+                      <div class="col">
+                        <!-- First name -->
+                        <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+                      </div>
+                      <div class="col">
+                        <!-- Last name -->
+                        <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+                      </div>
+                    </div>
+
+                    <!-- E-mail -->
+                    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+                    <!-- Password -->
+                    <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password"
+                      aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                      At least 8 characters and 1 digit
+                    </small>
+
+                    <!-- Phone number -->
+                    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number"
+                      aria-describedby="defaultRegisterFormPhoneHelpBlock">
+                    <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+                      Optional - for two step authentication
+                    </small>
+
+                    <!-- Newsletter -->
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+                      <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our
+                        newsletter</label>
+                    </div>
+
+                    <!-- Sign up button -->
+                    <button class="btn btn-info my-4 btn-block" type="submit">Sign in</button>
+
+                    <!-- Social register -->
+                    <p>or sign up with:</p>
+
+                    <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
+                    <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
+                    <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
+                    <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
+
+                    <hr>
+
+                    <!-- Terms of service -->
+                    <p>By clicking
+                      <em>Sign up</em> you agree to our
+                      <a href="" target="_blank">terms of service</a>
+
+                  </form>
+                  <!-- Default form register -->
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--/Mask-->
+      </div>
+      <!--/First slide-->
+    </div>
+    <!--/.Slides-->
+  </div>
+  <!--/.Carousel Wrapper-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center text-md-left pt-4">
+    <!--Footer Links-->
+    <div class="container-fluid">
+      <div class="row">
+
+
+      </div>
+      <!--/.Footer Links-->
+      <hr>
+      <!--Call to action-->
+      <div class="call-to-action text-center">
+        <ul class="list-unstyled list-inline mb-4">
+          <li>
+            <h5 class="my-4">Get free video tutorials</h5>
+          </li>
+          <a href="#" class="btn btn-info" role="button">Learn more</a>
+
+        </ul>
+      </div>
+      <!--/.Call to action-->
+      <!--Copyright-->
+      <div class="footer-copyright text-center">
+        <div class="container-fluid py-3">
+          © 2019 Copyright: <a href="https://mdbootstrap.com"> Eddie Graphics </a>
+        </div>
+      </div>
+      <!--/.Copyright-->
+  </footer>
+  <!--/.Footer-->
+
+
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+</body>
+
+</html>

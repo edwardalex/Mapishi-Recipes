@@ -1,36 +1,296 @@
-<div class="container-fluid">
-  
-  <h1 class="my-4 font-weight-bold">Masonry - images option</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-  <div class="grid">
-    <div class="grid-sizer"></div>
-    <div class="grid-item">
-      <img src="https://mdbootstrap.com/img/Photos/Others/food3.jpg" />
-    </div>
-    <div class="grid-item">
-      <img src="https://mdbootstrap.com/img/Photos/Others/image02.jpg" />
-    </div>
-    <div class="grid-item">
-      <img src="https://mdbootstrap.com/img/Photos/Others/image002.jpg" />
-    </div>
-    <div class="grid-item">
-      <img src="https://mdbootstrap.com/img/Photos/Others/image06.jpg" />
-    </div>
-    <div class="grid-item">
-      <img src="https://mdbootstrap.com/img/Photos/Others/image008.jpg" />
-    </div>
-    <div class="grid-item">
-      <img src="https://mdbootstrap.com/img/Photos/Others/image005.jpg" />
-    </div>
-    <div class="grid-item">
-      <img src="https://mdbootstrap.com/img/Photos/Others/image010.jpg" />
-    </div>
-    <div class="grid-item">
-      <img src="https://mdbootstrap.com/img/Photos/Others/image18.jpg" />
-    </div>
-    <div class="grid-item">
-      <img src="https://mdbootstrap.com/img/Photos/Others/image17.jpg" />
-    </div>
-  </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Images</title>
+  <!-- icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- custom styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<style>
   
-</div>
+  /* Add Animation */
+  .modal-content,
+  #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  @-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(0)
+    }
+
+    to {
+      -webkit-transform: scale(1)
+    }
+  }
+
+  @keyframes zoom {
+    from {
+      transform: scale(0)
+    }
+
+    to {
+      transform: scale(1)
+    }
+  }
+
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px) {
+    .modal-content {
+      width: 100%;
+    }
+  }
+</style>
+
+<body>
+  <!-- Start your project here-->
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Mapishi Jikoni</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="recipes.html">Recipes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="recources.html">Resources</a>
+        </li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Explore</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="foodiesconer.html">Foodie’s Corner</a>
+            <a class="dropdown-item" href="image.html">Images</a>
+            <a class="dropdown-item" href="video.html">Video</a>
+          </div>
+        </li>
+      </ul>
+      <!-- Links -->
+
+      <form class="form-inline">
+        <div class="md-form my-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        </div>
+      </form>
+    </div>
+    <!-- Collapsible content -->
+
+  </nav>
+  <!--/.Navbar-->
+
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <!--Mask-->
+        <div class="view">
+          <!--Video source-->
+          <video muted autoplay loop playsinline>
+            <source
+              src="https://player.vimeo.com/external/136078589.mobile.mp4?s=57b1ccad7f3bb9d7723692af6185673658a02589&profile_id=116"
+              type="video/mp4" />
+          </video>
+          <!-- Carousel content -->
+          <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
+            <ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
+
+              <!--empty-->
+
+              <h2>Mapishi Jikoni Images</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="view overlay zoom">
+                    <img id="myImg1" src="https://cdn.pixabay.com/photo/2017/03/10/13/57/cooking-2132874_960_720.jpg"
+                      alt="1" style="width:100%;max-width:400px">
+                  </div>
+                </div>
+                  <div class="col-md-4">
+                    <div class="view overlay zoom">
+                      <img id="myImg2" src="https://cdn.pixabay.com/photo/2017/02/15/10/39/salad-2068220__340.jpg"
+                        alt="2" style="width:100%;max-width:400px">
+                    </div>
+                  </div>
+                    <div class="col-md-4">
+                      <div class="view overlay zoom">
+                        <img id="myImg3"
+                          src="https://cdn.pixabay.com/photo/2017/03/10/13/57/cooking-2132874_960_720.jpg" alt="3"
+                          style="width:100%;max-width:400px">
+                      </div>
+                    </div>
+              </div><br>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="view overlay zoom">
+                    <img id="myImg1" src="https://cdn.pixabay.com/photo/2017/03/10/13/57/cooking-2132874_960_720.jpg"
+                      alt="4" style="width:100%;max-width:400px">
+                  </div>
+                </div>
+                  <div class="col-md-4">
+                    <div class="view overlay zoom">
+                      <img id="myImg2" src="https://cdn.pixabay.com/photo/2017/02/15/10/39/salad-2068220__340.jpg"
+                        alt="5" style="width:100%;max-width:400px">
+                    </div>
+                  </div>
+                    <div class="col-md-4">
+                      <div class="view overlay zoom">
+                        <img id="myImg3"
+                          src="https://cdn.pixabay.com/photo/2017/03/10/13/57/cooking-2132874_960_720.jpg" alt="6"
+                          style="width:100%;max-width:400px">
+                      </div>
+                    </div>
+              </div>
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                      <span class="close">&times;</span>
+                      <img class="modal-content" id="img01">
+                      <div id="caption"></div>
+                    </div>
+
+                    <!--empty-->
+
+            </ul>
+          </div>
+        </div>
+        <!--/Mask-->
+      </div>
+      <!--/First slide-->
+    </div>
+    <!--/.Slides-->
+  </div>
+  <!--/.Carousel Wrapper-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center text-md-left pt-3">
+    <!--Call to action-->
+    <div class="footer-copyright text-center">
+      <p>Our Social Media Accounts:</p>
+      <a href="https://www.facebook.com/" class="mx-2" role="button"><i
+          class="fab fa-facebook-f light-blue-text"></i></a>
+      <a href="https://twitter.com/" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
+      <a href="https://www.linkedin.com/" class="mx-2" role="button"><i
+          class="fab fa-linkedin-in light-blue-text"></i></a>
+      <a href="https://github.com/" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
+
+      <hr>
+      <!--Copyright-->
+      <div class="footer-copyright text-center">
+        <div class="container-fluid py-3">
+          © 2020 Copyright: <a target="_blank" href="https://edwardalex.github.io/Personal-portfolio/"> Eddie Graphics </a>
+        </div>
+      </div>
+      <!--/.Copyright-->
+  </footer>
+  <!--/.Footer-->
+
+
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg1");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    var img = document.getElementById("myImg2");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    var img = document.getElementById("myImg3");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
